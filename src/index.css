@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes glitch {
+  0% {
+    text-shadow: 0.05em 0 0 #ff00c1, -0.05em -0.025em 0 #3498db,
+      -0.025em 0.05em 0 #ffeb3b;
+  }
+  14% {
+    text-shadow: 0.05em 0 0 #ff00c1, -0.05em -0.025em 0 #3498db,
+      -0.025em 0.05em 0 #ffeb3b;
+  }
+  15% {
+    text-shadow: -0.05em -0.025em 0 #ff00c1, 0.025em 0.025em 0 #3498db,
+      -0.05em -0.05em 0 #ffeb3b;
+  }
+  49% {
+    text-shadow: -0.05em -0.025em 0 #ff00c1, 0.025em 0.025em 0 #3498db,
+      -0.05em -0.05em 0 #ffeb3b;
+  }
+  50% {
+    text-shadow: 0.025em 0.05em 0 #ff00c1, 0.05em 0 0 #3498db,
+      0 -0.05em 0 #ffeb3b;
+  }
+  99% {
+    text-shadow: 0.025em 0.05em 0 #ff00c1, 0.05em 0 0 #3498db,
+      0 -0.05em 0 #ffeb3b;
+  }
+  100% {
+    text-shadow: -0.025em 0 0 #ff00c1, -0.025em -0.025em 0 #3498db,
+      -0.025em -0.05em 0 #ffeb3b;
+  }
+}
+
+.glitch-text {
+  animation: glitch 1s infinite;
+  font-weight: bold;
+}
